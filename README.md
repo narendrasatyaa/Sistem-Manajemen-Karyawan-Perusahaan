@@ -1,52 +1,66 @@
-# 🗂️ Deskripsi Proyek: 
+# 🗂️ Deskripsi Proyek: Sistem Manajemen Karyawan
 📌 Ringkasan
-Sistem ini merupakan aplikasi web sederhana yang dibuat untuk mengelola data karyawan, divisi, dan presensi dalam suatu perusahaan. Proyek ini dilengkapi dengan fitur CRUD (Create, Read, Update, Delete) dan autentikasi login, sehingga hanya pengguna yang memiliki akun yang dapat mengakses sistem.
+Sistem ini merupakan aplikasi web sederhana yang dibuat untuk mengelola data karyawan, divisi, dan presensi dalam suatu perusahaan. Proyek ini dilengkapi dengan fitur CRUD (Create, Read, Update, Delete) serta autentikasi login, sehingga hanya pengguna terverifikasi yang dapat mengakses sistem.
 
-# ⚙️ Fitur Utama
+#⚙️ Fitur Utama
 🔐 Login
-Sistem login berbasis session untuk membatasi akses ke halaman admin.
-👨‍💼 Manajemen Karyawan
-Menampilkan, menambah, mengedit, dan menghapus data karyawan. Setiap karyawan terkait dengan satu divisi dan memiliki catatan presensi.
-🏢 Manajemen Divisi
-Menyimpan informasi divisi di perusahaan dan dapat ditautkan ke banyak karyawan.
-🕒 Manajemen Presensi
-Menyimpan data kehadiran setiap karyawan berdasarkan tanggal. Data ini bisa diupdate atau dihapus jika terjadi kesalahan pencatatan.
-# 🧰 Stack Teknologi
-Frontend: HTML, CSS (opsional dengan Bootstrap untuk tampilan yang responsive)
-Backend: PHP Native
-Database: MySQL
-Fitur Keamanan: Session login menggunakan PHP $_SESSION
+Sistem login berbasis session ($_SESSION) untuk membatasi akses ke halaman admin.
 
-# Relasi Database 
+👨‍💼 Manajemen Karyawan
+Menampilkan, menambah, mengedit, dan menghapus data karyawan.
+Setiap karyawan terhubung dengan satu divisi dan memiliki riwayat presensi.
+
+🏢 Manajemen Divisi
+Menyimpan data divisi di perusahaan dan dapat dikaitkan ke banyak karyawan.
+
+🕒 Manajemen Presensi
+Mencatat kehadiran setiap karyawan berdasarkan tanggal.
+Data kehadiran dapat diperbarui atau dihapus jika ada kesalahan pencatatan.
+
+# 🧰 Stack Teknologi
+Frontend: HTML, CSS (opsional: Bootstrap untuk tampilan responsive)
+
+Backend: PHP Native
+
+Database: MySQL
+
+Keamanan: Session login menggunakan $_SESSION
+
+# 🗃️ Relasi Database
 Tabel: karyawan
-- id_karyawan (PK)
-- nama
-- email
-- id_divisi (FK)
+
+id_karyawan (PK)
+
+nama
+
+email
+
+id_divisi (FK)
 
 Tabel: divisi
-- id_divisi (PK)
-- nama_divisi
+
+id_divisi (PK)
+
+nama_divisi
 
 Tabel: presensi
-- id_presensi (PK)
-- id_karyawan (FK)
-- tanggal
-- status (Hadir / Izin / Sakit / Alpha)
 
+id_presensi (PK)
+
+id_karyawan (FK)
+
+tanggal
+
+status (Hadir / Izin / Sakit / Alpha)
 
 # 🎯 Tujuan Proyek
-Proyek ini bertujuan untuk:
 Melatih penggunaan PHP dan MySQL dalam pengembangan web berbasis data.
-Menerapkan konsep dasar relasi database (foreign key) antara beberapa tabel.
-Membangun sistem sederhana namun modular yang bisa dikembangkan menjadi sistem skala perusahaan ke depannya.
 
-gaperlu hosting, mingdep presentasi, sisanya presentasi uas
-# 📚 Referensi
+Menerapkan konsep relasi antar tabel menggunakan foreign key.
 
+Membangun sistem sederhana yang modular dan mudah dikembangkan untuk skala yang lebih besar.
 
-# Struktur Folder
-
+# 📁 Struktur Folder
 /karyaHub/
 │
 ├── config/
@@ -77,3 +91,4 @@ gaperlu hosting, mingdep presentasi, sisanya presentasi uas
 │
 ├── index.php
 └── README.md
+
