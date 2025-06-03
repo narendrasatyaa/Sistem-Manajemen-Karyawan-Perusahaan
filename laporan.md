@@ -53,7 +53,6 @@ Pada tujuan pembuatan web ini yaitu untuk mengembangkan aplikasi web dinamis yan
 * MySQL untuk database manajemen.
 
 ## 📂 Struktur Direktori
-
 sistem-informasi-nilai-timnilaiin/
 ├── admin/
 │   ├── admin.php
