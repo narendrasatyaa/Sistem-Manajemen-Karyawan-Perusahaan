@@ -62,33 +62,29 @@ Membangun sistem sederhana yang modular dan mudah dikembangkan untuk skala yang 
 
 # 📁 Struktur Folder
 /karyaHub/
-│
-├── config/
-│   └── koneksi.php
-│
-├── login/
+sistem-informasi-nilai-timnilaiin/
+├── admin/
+│   ├── admin.php
+│   ├── dosen.php
+│   ├── mahasiswa.php
+│   └── assets/
+│       ├── css/
+│       │   ├── admin.css
+│       │   ├── dosen.css
+│       │   └── mahasiswa.css
+│       └── img/
+│           ├── krs.png
+│           ├── logo-nilaiin-hijau.png
+│           ├── logo-nilaiin-putih-crop.png
+│           ├── logo-nilaiin-putih.png
+│           ├── pamflet-ui.png
+│           ├── profile-mhs copy.png
+│           ├── profile-mhs.png
+│           └── wisuda.png
+├── auth/
+│   ├── login.css
 │   ├── login.php
-│   └── logout.php
-│
-├── dashboard/
-│   ├── index.php
-│   ├── karyawan/
-│   │   ├── tambah.php
-│   │   ├── edit.php
-│   │   └── hapus.php
-│   ├── divisi/
-│   │   ├── tambah.php
-│   │   ├── edit.php
-│   │   └── hapus.php
-│   └── presensi/
-│       ├── tambah.php
-│       ├── edit.php
-│       └── hapus.php
-│
-├── assets/
-│   ├── css/
-│   └── js/
-│
+│   └── urp-univ.png
 ├── index.php
-└── README.md
-
+├── README.md
+└── .gitignore
