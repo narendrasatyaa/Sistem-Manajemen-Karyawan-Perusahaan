@@ -1,67 +1,59 @@
-# 🗂️ Deskripsi Proyek: Sistem Manajemen Karyawan
-📌 Ringkasan
-Sistem ini merupakan aplikasi web sederhana yang dibuat untuk mengelola data karyawan, divisi, dan presensi dalam suatu perusahaan. Proyek ini dilengkapi dengan fitur CRUD (Create, Read, Update, Delete) serta autentikasi login, sehingga hanya pengguna terverifikasi yang dapat mengakses sistem.
+# Sistem Informasi Nilai
 
-#⚙️ Fitur Utama
-🔐 Login
-Sistem login berbasis session ($_SESSION) untuk membatasi akses ke halaman admin.
+Pada tujuan pembuatan web ini yaitu untuk mengembangkan aplikasi web dinamis yang dapat digunakan untuk mengelola data nilai di Universitas Rajin Pangkal Pandai (URP). Aplikasi ini akan dibangun menggunakan HTML, CSS, PHP, dan MySQL.
 
-👨‍💼 Manajemen Karyawan
-Menampilkan, menambah, mengedit, dan menghapus data karyawan.
-Setiap karyawan terhubung dengan satu divisi dan memiliki riwayat presensi.
+## 🚀 Fitur Utama
 
-🏢 Manajemen Divisi
-Menyimpan data divisi di perusahaan dan dapat dikaitkan ke banyak karyawan.
+1.  **Autentikasi Pengguna**:
+    * Pengguna dapat login menggunakan username dan password.
+    * Terdapat tiga jenis pengguna: Dosen, Mahasiswa, dan Admin.
+    * Setiap pengguna memiliki hak akses yang berbeda.
+2.  **Dashboard Setiap Pengguna**:
+    * Menampilkan informasi ringkas tentang pengguna yang sedang login.
+    * Menampilkan menu navigasi sesuai dengan hak akses pengguna.
+3.  **Untuk Dosen**:
+    * **Pengelolaan Jenis Nilai**:
+        * Membuat berbagai jenis nilai (UAS, UTS, Tugas, Quiz) di setiap mata kuliah.
+    * **Pengelolaan Nilai Mahasiswa Secara Online**:
+        * Memasukkan berbagai nilai untuk setiap mahasiswa per mata kuliah.
+        * Mengubah atau menghapus nilai-nilai yang sudah dimasukkan/disimpan.
+4.  **Untuk Mahasiswa**:
+    * **Lihat Nilai**:
+        * Melihat detail nilai dan nilai akhir untuk setiap mata kuliah yang dipilih.
+        * Melihat informasi pada UMS pekan.
+5.  **Untuk Admin**:
+    * **Pengelolaan Pengguna**:
+        * Menambahkan, mengubah, dan menghapus pengguna (dosen dan mahasiswa).
+    * **Pengelolaan Mata Kuliah**:
+        * Menambahkan, mengubah, dan menghapus mata kuliah.
+    * **Pengelolaan Kelas**:
+        * Mengatur mahasiswa yang terdaftar.
+        * Mengatur dosen pengampu.
+6.  **Struktur Database**:
+    * `users` - menyimpan data pengguna (dosen dan mahasiswa).
+    * `mata_kuliah` - menyimpan informasi mata kuliah.
+    * `semester` - menyimpan informasi semester.
+    * `kelas` - menyimpan informasi kelas.
+    * `mahasiswa` - menyimpan data mahasiswa.
+    * `dosen` - menyimpan data dosen.
+    * `kelas_mahasiswa` - menyimpan relasi antara mahasiswa dan kelas.
+    * `kelas_dosen` - menyimpan relasi antara dosen dan kelas. Satu kelas bisa memiliki lebih dari satu dosen.
+    * `jenis_nilai` - menyimpan jenis-jenis nilai (misalnya: UAS, UTS, tugas, quiz).
+    * `kelas_jenis_nilai_bobot` - menghubungkan kelas dengan jenis penilaian beserta bobot spesifiknya.
+    * `nilai` - menyimpan nilai mahasiswa untuk kelas dan jenis penilaian tertentu.
+    * `scores` - menyimpan nilai mahasiswa untuk setiap penilaian.
+    * `nilai_akhir` - menyimpan nilai akhir mahasiswa untuk setiap kelas.
 
-🕒 Manajemen Presensi
-Mencatat kehadiran setiap karyawan berdasarkan tanggal.
-Data kehadiran dapat diperbarui atau dihapus jika ada kesalahan pencatatan.
 
-# 🧰 Stack Teknologi
-Frontend: HTML, CSS (opsional: Bootstrap untuk tampilan responsive)
+## 🛠 Teknologi yang Digunakan
 
-Backend: PHP Native
+* HTML untuk struktur.
+* CSS untuk styling.
+* PHP untuk fungsionalitas dinamis.
+* MySQL untuk database manajemen.
 
-Database: MySQL
+## 📂 Struktur Direktori
 
-Keamanan: Session login menggunakan $_SESSION
-
-# 🗃️ Relasi Database
-Tabel: karyawan
-
-id_karyawan (PK)
-
-nama
-
-email
-
-id_divisi (FK)
-
-Tabel: divisi
-
-id_divisi (PK)
-
-nama_divisi
-
-Tabel: presensi
-
-id_presensi (PK)
-
-id_karyawan (FK)
-
-tanggal
-
-status (Hadir / Izin / Sakit / Alpha)
-
-# 🎯 Tujuan Proyek
-Melatih penggunaan PHP dan MySQL dalam pengembangan web berbasis data.
-
-Menerapkan konsep relasi antar tabel menggunakan foreign key.
-
-Membangun sistem sederhana yang modular dan mudah dikembangkan untuk skala yang lebih besar.
-
-# 📁 Struktur Folder
-/karyaHub/
 sistem-informasi-nilai-timnilaiin/
 ├── admin/
 │   ├── admin.php
