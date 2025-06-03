@@ -1,6 +1,6 @@
 # Sistem Informasi Nilai
 
-Pada tujuan pembuatan web ini yaitu untuk mengembangkan aplikasi web dinamis yang dapat digunakan untuk mengelola data nilai di Universitas Rajin Pangkal Pandai (URP). Aplikasi ini akan dibangun menggunakan HTML, CSS, PHP, dan MySQL.
+Pada tujuan pembuatan web ini, yaitu untuk mengembangkan aplikasi web dinamis yang dapat digunakan untuk mengelola data nilai di Universitas Rajin Pangkal Pandai (URP). Aplikasi ini akan dibangun menggunakan HTML, CSS, PHP, dan MySQL.
 
 ## 🚀 Fitur Utama
 
@@ -14,21 +14,27 @@ Pada tujuan pembuatan web ini yaitu untuk mengembangkan aplikasi web dinamis yan
 3.  **Untuk Dosen**:
     * **Pengelolaan Jenis Nilai**:
         * Membuat berbagai jenis nilai (UAS, UTS, Tugas, Quiz) di setiap mata kuliah.
+        * Mengatur bobot untuk setiap jenis nilai (total bobot harus 100%).
     * **Pengelolaan Nilai Mahasiswa Secara Online**:
         * Memasukkan berbagai nilai untuk setiap mahasiswa per mata kuliah.
         * Mengubah atau menghapus nilai-nilai yang sudah dimasukkan/disimpan.
 4.  **Untuk Mahasiswa**:
     * **Lihat Nilai**:
+        * Memilih daftar mata kuliah yang diambil.
         * Melihat detail nilai dan nilai akhir untuk setiap mata kuliah yang dipilih.
-        * Melihat informasi pada UMS pekan.
+        * Melihat informasi pada UMS Sepekan (berita).
 5.  **Untuk Admin**:
     * **Pengelolaan Pengguna**:
         * Menambahkan, mengubah, dan menghapus pengguna (dosen dan mahasiswa).
     * **Pengelolaan Mata Kuliah**:
         * Menambahkan, mengubah, dan menghapus mata kuliah.
+    * **Pengelolaan Semester**:
+        * Menambahkan, mengubah, dan menghapus semester.
+        * Mengatur mata kuliah yang ditawarkan pada setiap semester.
     * **Pengelolaan Kelas**:
-        * Mengatur mahasiswa yang terdaftar.
-        * Mengatur dosen pengampu.
+        * Menambahkan, mengubah, dan menghapus kelas.
+        * Mengatur mahasiswa yang terdaftar dalam setiap kelas.
+        * Mengatur dosen pengampu untuk setiap kelas (satu kelas bisa memiliki lebih dari satu dosen).
 6.  **Struktur Database**:
     * `users` - menyimpan data pengguna (dosen dan mahasiswa).
     * `mata_kuliah` - menyimpan informasi mata kuliah.
@@ -43,7 +49,6 @@ Pada tujuan pembuatan web ini yaitu untuk mengembangkan aplikasi web dinamis yan
     * `nilai` - menyimpan nilai mahasiswa untuk kelas dan jenis penilaian tertentu.
     * `scores` - menyimpan nilai mahasiswa untuk setiap penilaian.
     * `nilai_akhir` - menyimpan nilai akhir mahasiswa untuk setiap kelas.
-
 
 ## 🛠 Teknologi yang Digunakan
 
