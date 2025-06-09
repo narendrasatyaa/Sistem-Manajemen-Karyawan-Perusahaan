@@ -61,6 +61,7 @@ Menerapkan konsep relasi antar tabel menggunakan foreign key.
 Membangun sistem sederhana yang modular dan mudah dikembangkan untuk skala yang lebih besar.
 
 # 📁 Struktur Folder
+```
 /karyaHub/
 │
 ├── config/
@@ -91,4 +92,4 @@ Membangun sistem sederhana yang modular dan mudah dikembangkan untuk skala yang 
 │
 ├── index.php
 └── README.md
-
+```
